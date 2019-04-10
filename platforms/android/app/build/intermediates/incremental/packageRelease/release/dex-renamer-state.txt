@@ -1,0 +1,4 @@
+#Wed Dec 19 14:32:52 MUT 2018
+base.0=D\:\\testcar\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

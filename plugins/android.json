@@ -1,0 +1,36 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.testcar.app"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.testcar.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.cardealer.app"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.cardealer.app"
+    },
+    "phonegap-plugin-push": {
+      "ANDROID_SUPPORT_V13_VERSION": "27.+",
+      "FCM_VERSION": "11.6.2",
+      "PACKAGE_NAME": "com.cardealer.app"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.cardealer.app"
+    },
+    "phonegap-plugin-multidex": {
+      "PACKAGE_NAME": "com.cardealer.app"
+    }
+  }
+}

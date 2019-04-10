@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"><title></title>
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<!-- main style -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- validetta-->
+<link rel="stylesheet" type="text/css" href="css/validetta.min.css">
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!-- customs css-->
+
+</head>
+<body>
+<!--=================================
+  loading -->
+
+ <div id="loading">
+  <div id="loading-center">
+      <img src="images/loader.gif" alt="">
+ </div>
+</div>
+<!--=================================
+  loading -->
+
+<!--=================================
+ header -->
+ <header id="header" class="defualt">
+ <!--=================================
+  mega menu -->
+ <div class="menu">
+   <!-- menu start -->
+    <nav id="menu" class="mega-menu">
+     <!-- menu list items container -->
+     <section class="menu-list-items">
+      <div class="container">
+       <div class="row">
+        <div class="col-md-12">
+         <!-- menu logo -->
+         <ul class="menu-logo">
+             <li>
+                 <a href="index.html"><img id="logo_img" src="images/logo-light.png" alt="logo"> </a>
+             </li>
+         </ul>
+         <!-- menu links -->
+         <ul class="menu-links">
+          <div class="menu_list"></div>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </section>
+    </nav>
+   <!-- menu end -->
+  </div>
+ </header>
+<!--=================================
+ header -->
+<!--=================================
+ inner-intro -->
+<!--=================================
+ inner-intro -->
+<!--=================================
+ register-form  -->
+<section class="register-form page-section-ptb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+         <div class="section-title">
+           <p></p>
+           <span id="listing_count"></span>
+           <h2>Add Listing</h2>
+           <div class="separator"></div>
+         </div>
+<!-- Add from-->
+<section class="search white-bg">
+  <div class="container">
+   <div class="search-block">
+     <form id="frmAddListing" name="frmAddListing" method="post">
+    <div class="row">
+     <div class="col-md-8">
+      <div class="row">
+       <div class="col-md-4">
+        <span>Select make</span>
+        <div class="selected-box">
+         <select class="selectpicker" id="select_make" name="select_make">
+        </select>
+       </div>
+        </div>
+        <div class="col-md-4">
+        <span>Select model</span>
+          <div class="selected-box">
+           <select class="selectpicker" id="select_model" name="select_model">
+             <option value="0"></option>
+           </select>
+         </div>
+        </div>
+        <div class="col-md-4">
+        <span>Select year</span>
+         <div class="selected-box">
+           <select class="selectpicker" id="select_year" name="select_year">
+           </select>
+          </div>
+        </div>
+        <!--<div class="col-md-4">
+        <span>Select body style</span>
+        <div class="selected-box">
+         <select class="selectpicker">
+            <option>Body style</option>
+            <option>2dr Car</option>
+            <option>4dr Car</option>
+            <option>Convertible</option>
+            <option>Sedan</option>
+            <option>Sports Utility</option>
+           </select>
+         </div>
+       </div>-->
+        <div class="col-md-4">
+       <span>vehicle Condition</span>
+         <div class="selected-box">
+           <select class="selectpicker" id="select_condition" name="select_condition">
+           </select>
+         </div>
+       </div>
+       <div class="col-md-4">
+            <div class="form_group">
+              <span>Mileage*</span>
+              <input type="number" placeholder="Mileage" class="form-control" name="txt_mileage" id="txt_mileage" data-validetta="required,number,minLength[2]">
+            </div>
+       </div>
+       <div class="col-md-4">
+            <div class="form_group">
+              <span>Engine CC*</span>
+              <input type="number" placeholder="Engine CC" class="form-control" name="txt_engine" id="txt_engine" data-validetta="required,number,minLength[2]">
+            </div>
+       </div>
+       <div class="col-md-4">
+       <span>Fuel Type*</span>
+         <div class="selected-box">
+          <select class="selectpicker" id="select_fuel" name="select_fuel">
+            <option value="0"></option>
+          </select>
+        </div>
+       </div>
+       <div class="col-md-4">
+       <span>Gear Type*</span>
+         <div class="selected-box">
+          <select class="selectpicker" id="select_gear" name="select_gear">
+
+          </select>
+        </div>
+       </div>
+       <div class="col-md-4">
+       <span>Location*</span>
+         <div class="selected-box">
+          <select class="selectpicker" id="select_location" name="select_location">
+            <option value="0">Location</option>
+          </select>
+        </div>
+       </div>
+       <div class="col-md-4">
+            <div class="form_group">
+              <span>Price (MUR)*</span>
+              <input type="number" placeholder="Enter Price" class="form-control" name="txt_price" id="txt_price" data-validetta="required,number,minLength[2]">
+            </div>
+            <div id="txt_amount"></div>
+       </div>
+       <div class="col-md-4">
+            <div class="form_group">
+              <span>Phone Number</span>
+              <input type="number" placeholder="" class="form-control" name="txt_phone" id="txt_phone" disabled>
+            </div>
+       </div>
+       <div class="col-md-4">
+            <div class="form_group">
+              <span>Sold By</span>
+              <input type="text" placeholder="" class="form-control" name="txt_name" id="txt_name" disabled>
+            </div>
+       </div>
+     </form>
+     <form class="frmUploadImg" enctype="multipart/form-data" method="post" accept="image/*">
+
+
+       <div class="col-md-4">
+         <div class="form-group">
+                  <label for="upload_file">Upload Image</label>
+                  <input type="file" id="upload_file" name ="upload_file[]" multiple/>
+                  <span class="text-muted">Only .jpg, .png files allowed - Max Size 5MB - Total 5 Pictures allowed</span>
+                  <span id="error_multiple_files"></span>
+                  <div id="img_count" count="1"></div>
+                  <!--<div id="img1"></div>
+                  <div id="img2"></div>
+                  <div id="img3"></div>
+                  <div id="img4"></div>
+                  <div id="img5"></div>-->
+                  <!--<p class="help-block">Example block-level help text here.</p>-->
+          </div>
+          <div class="show_image_preview"></div>
+       </div>
+      </div>
+     </div>
+    <div class="col-md-4" style="padding-top:15px">
+      <button id="btn_save_listing" name="btn_save_listing" type="button" class="button red"> Save </button>
+      <button id="btn_cancel" name="btn_cancel" type="button" class="button red"> Cancel </button></br>
+    </div>
+   </div>
+ </form>
+  </div>
+</div>
+</section>
+<!--//end Add Form-->
+        </div>
+    </div>
+  </div>
+</section>
+
+<!--=================================
+ footer-->
+<div class="footer_list">
+
+</div>
+<!--//footer-->
+ <!--=================================
+ back to top -->
+<div class="car-top">
+  <span><img src="images/car.png" alt=""></span>
+</div>
+ <!--=================================
+ back to top -->
+<!--=================================
+ jquery -->
+ <!--=================================
+  phoenGap-->
+ <script type="text/javascript" src="cordova.js"></script>
+ <!-- jquery  -->
+ <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+ <!-- custom -->
+ <script type="text/javascript" src="js/custom.js"></script>
+
+<!-- bootstrap -->
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- mega-menu -->
+<script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+
+<!-- validetta -->
+<script type="text/javascript" src="js/validetta.min.js"></script>
+<!-- thousand seperator-->
+<script type="text/javascript" src="js/thousand_seperator/number-divider.min.js"></script>
+<!-- validetta -->
+<script type="text/javascript" src="js/validetta.min.js"></script>
+<script type="text/javascript">
+//get all data from db //
+function get_make(){
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_all_make.php",
+    data:{"table":"tbl_car_makes","add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+            $('#select_make').html(data);
+    },
+    error: function(e){
+
+    }
+    });
+}
+function get_year() {
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_year.php",
+    data:{"add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+            $('#select_year').html(data);
+    },
+    error: function(e){
+      }
+    });
+}
+function get_model() {
+  $make_id=1;
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_model.php",
+    data:{"table":"tbl_car_models","make_id":$make_id,"add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+      //console.log(data);
+      //$('#select_model').remove('disabled');
+      $('#select_model').html(data);
+    },
+    error: function(e){
+      //console.log(e);
+    }
+  });
+}
+function get_conditions() {
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_conditions.php",
+    data:{"add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+            $('#select_condition').html(data);
+          },
+    error: function(e){
+      }
+    });
+}
+function get_fuel() {
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_fuel.php",
+    data:{"add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+            $('#select_fuel').html(data);
+          },
+    error: function(e){
+      }
+    });
+}
+function get_gear() {
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_gear.php",
+    data:{"add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+            $('#select_gear').html(data);
+          },
+    error: function(e){
+      }
+    });
+}
+function get_location() {
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_location.php",
+    data:{"add_listing":1},
+    crossDomain:true,
+    cache:false,
+    success:function(data){
+            $('#select_location').html(data);
+          },
+    error: function(e){
+      }
+    });
+}
+
+function get_car_count() {
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_count.php",
+    data:{"table":"tbl_listings"},
+    crossDomain:true,
+    cache:false,
+    success:function (data) {
+      //console.log(data);
+      $('#vehicles_in_sotck').attr('data-to',data);
+    }
+  })
+}
+function get_user_details() {
+  var user_id=window.sessionStorage.getItem("user_id");
+  $.ajax({
+
+    type:"POST",
+    url:php_link+"fetch_records_id.php",
+    data:{"table":"tbl_users","field":"user_id","id":user_id},
+    crossDomain:true,
+    cache:false,
+    success:function (data) {
+      //console.log(data);
+      var user_details=JSON.parse(data);
+      //console.log(user_details.phone);
+      $('#txt_phone').val(user_details.phone);
+      $('#txt_name').val(user_details.name);
+    }
+  })
+}
+
+function check_session() {
+
+  var user_id=window.sessionStorage.getItem("user_id");
+  if(!user_id){
+  window.location.href="cd_login.html";
+    }
+    else {
+      return user_id;
+    }
+  }
+  function get_images(){
+    //var images=[];
+    var images=$('.image_preview').map(function () {
+      return this.img_name;
+    }).get();
+  }
+$(document).ready(function(){
+  var user_id=check_session();
+
+  //get all data
+//get_select_values('tbl_car_makes','make_id','make');
+  //check_session();
+  get_make();
+  get_model();
+  get_year();
+  get_conditions();
+  get_fuel();
+  get_gear();
+  get_location();
+  get_car_count();
+  get_user_details();
+
+  $.ajax({
+    type:"POST",
+    url:php_link+"get_count.php",
+    data:{'table':'tbl_listings','field':'user_id','id':user_id},
+    crossDomain:true,
+    cache:false,
+    success:function (data) {
+      //var listing left= max_user_listings-data;
+      $('#listing_count').html("Listings: "+data+"/"+max_user_listings);
+      //console.log(data);
+    }
+    })
+    $('#select_make').change(function () {
+      //alert($(this).val());
+      $.ajax({
+        type:"POST",
+        url:php_link+"get_model.php",
+        data:{"table":"tbl_car_models","make_id":$(this).val()},
+        success:function(data){
+          $('#select_model').html(data);
+        },
+                error: function(e){
+        }
+      });
+    });
+    $('#txt_price').keyup(function () {
+      //alert($(this).val());
+      //$(this).divide();
+      var price=$(this).val();
+      $('#txt_amount').html(price);
+      $('#txt_amount').divide();
+    });
+
+
+    //image upload function
+    $('#upload_file').change(function(){
+      var img_count=$('#img_count').attr('count');
+        //console.log(img_count);
+      if(img_count>5){
+        alert("You are allowed to upload only Max 5 Images")
+
+      }
+      else{
+      var fileUpload = $(this).get(0);
+      var user_id=window.sessionStorage.getItem("user_id");
+                          var files = fileUpload.files;
+                          var max_img=5;
+                          if (files.length != 0) {
+                              var data = new FormData($('.frmUploadImg'));
+                                for (var i = 0; i < files.length ; i++) {
+                                  data.append("img", files[i]);
+                                  data.append("user_id",user_id);
+                             }
+                              $.ajax({
+                                  contentType: false,
+                                  processData: false,
+                                  crossDomain: true,
+                                  type: 'POST',
+                                  data: data,
+                                  url: php_link+'upload_img.php',
+                                  beforeSend:function(){
+                                    $('#error_multiple_files').html('<br /><label class="text-primary">Uploading...</label>');
+                                    },
+                                  success: function (response) {
+                                    $('#error_multiple_files').html('<br /><label class="text-success">Uploaded</label>');
+                                    $('.show_image_preview').append(response);
+                                    var img_count=$('#img_count').attr('count');
+                                    img_count++;
+                                    $('#img_count').attr('count',img_count);
+                                    //$('#img'+max_img).attr('src',data);
+                                      //console.log(img_count);
+                                      //location.href = 'xxx/Index/';
+                                  }
+                              });
+                          }
+              }
+ });
+    // remove button click to remove images
+    $(document).on('click','.btn_remove',function (){
+        var img=$(this).attr('img_name');
+        var img_id=$(this).attr('img_id')
+        console.log(img);
+        var img_count=$('#img_count').attr('count');
+        var image = "../admin/uploaded_images/"+img;
+        //$(this).remove;
+        $.ajax({
+            url:php_link+"delete_image.php",
+            type:"POST",
+            cache:false,
+            crossDomain: true,
+            data: {"img":image},
+            success: function (response) {
+
+              //$('')
+              img_count=img_count-1;
+              $('#img_count').attr('count',img_count);
+              //$(this).remove();
+              $('#'+img_id).slideUp().remove();
+              $('#error_multiple_files').html('<br /><label class="text-danger">Deleted..</label>');
+            }
+        })
+
+    });
+    //save button Click
+    $('#btn_save_listing').click(function () {
+      var user_id=window.sessionStorage.getItem("user_id");
+      var txt_phone=$('#txt_phone').val();
+      var images=[];
+      var img_url="";
+
+      $('.image_preview').each(function(key, value){
+        var x=1;
+        var image=$(this).attr('img_name');
+          images.push(image);
+          x++;
+      })
+      for(var i=0;i<images.length;i++){
+          img_url+="&img"+i+"="+images[i];
+        }
+
+      var jsonString=JSON.stringify(images);
+      var frmData=$('#frmAddListing').serialize()+"&user_id="+user_id+"&table=tbl_istings&txt_phone="+txt_phone;
+      frmData=frmData+img_url;
+
+      //console.log(frmData);
+      $.ajax({
+        //save listing_count
+        type:"POST",
+        beforeSend: function(){
+          //show waiting /loading animation
+          $('#loading').show();
+  },
+        url:php_link+"save_listing.php",
+        data:frmData,
+        crossDomain:true,
+        cache:false,
+        success:function(response){
+          //console.log(response);
+          if(response!=""){
+            alert("Your listing has been saved!!")
+            window.location="cd_admin.html";
+          }
+
+          },
+        error:function (event) {
+          console.log(event);
+        }
+
+        //save image link to db
+
+      })
+  })
+
+
+});//end Document ready
+</script>
+</body>
+</html>

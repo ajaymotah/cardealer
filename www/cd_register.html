@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"><title></title>
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" />
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<!-- main style -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- validetta-->
+<link rel="stylesheet" type="text/css" href="css/validetta.min.css">
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+<!--=================================
+  loading -->
+
+ <div id="loading">
+  <div id="loading-center">
+      <img src="images/loader.gif" alt="">
+ </div>
+</div>
+<!--=================================
+  loading -->
+
+<!--=================================
+ header -->
+ <header id="header" class="defualt">
+ <!--=================================
+  mega menu -->
+ <div class="menu">
+   <!-- menu start -->
+    <nav id="menu" class="mega-menu">
+     <!-- menu list items container -->
+     <section class="menu-list-items">
+      <div class="container">
+       <div class="row">
+        <div class="col-md-12">
+         <!-- menu logo -->
+         <ul class="menu-logo">
+             <li>
+                 <a href="index.html"><img id="logo_img" src="images/logo-light.png" alt="logo"> </a>
+             </li>
+         </ul>
+         <!-- menu links -->
+         <ul class="menu-links">
+          <div class="menu_list"></div>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </section>
+    </nav>
+   <!-- menu end -->
+  </div>
+ </header>
+<!--=================================
+ header -->
+<!--=================================
+ inner-intro -->
+<!--=================================
+ inner-intro -->
+<!--=================================
+ register-form  -->
+<section class="register-form page-section-ptb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+         <div class="section-title">
+           <span> </span>
+           <h2>Car dealer app</h2>
+           <div class="separator"></div>
+         </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+       <div class="col-lg-8 col-md-12">
+        <div class="gray-form">
+          <form id="frm_register" method="post" action="">
+           <div class="row">
+           <div class="form-group col-md-6">
+             <label>Your Name*</label>
+            <input class="form-control" type="text" placeholder="Your Name" name="txtName" data-validetta="required,minLength[2]">
+            </div>
+            <div class="form-group col-md-6">
+             <label>Surname*</label>
+              <input class="form-control" type="text" placeholder="Last Name" name="txtSurname" data-validetta="required,minLength[2]">
+             </div>
+            </div>
+            <div class="form-group">
+             <label>PIN* (Enter a 4 Digit PIN)</label>
+               <input class="form-control" name="txtPin1" placeholder="Password" maxlength="4" data-validetta="required,number,minLength[4],maxLength[4]">
+            </div>
+            <div class="form-group">
+             <label>Re-enter PIN*</label>
+               <input class="form-control" placeholder="Password" maxlength="4" data-validetta="equalTo[txtPin1],number,minLength[4],maxLength[4]">
+            </div>
+            <!--<div class="form-group">
+             <label>Email*</label>
+               <input class="form-control" placeholder="Enter your email" name="txtEmail" data-validetta="required,minLength[2],email">
+            </div>-->
+            <div class="form-group">
+             <label>Mobile phone*</label>
+               <input class="form-control" placeholder="Enter your mobile no" name="txtPhone" maxlength="8" data-validetta="required,number,minLength[8],maxLength[8],remote[check_phone]">
+            </div>
+                <div class="form-group">
+                 <label>Gender*</label>
+                   <div class="selected-box">
+                    <select name="slt_gender" >
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Other</option>
+                    </select>
+                   </div>
+                </div>
+                 <!--<div class="form-group">
+                  <div class="remember-checkbox">
+                     <input type="checkbox" name="one" id="one" />
+                      <label for="one">Accept our <a href="#"> privacy policy</a> and <a href="#"> customer agreement</a></label>
+                     </div>
+                   </div>-->
+                  <button type="submit" name="btn_register" class="button red">Register Account</button>
+                   <!--<a href="#" class="button red" id="btn_register"> Register an account </a>-->
+                 </form>
+                   <p class="link">Already have an account? please <a href="cd_login.html"> login here </a></p>
+               </div>
+           </div>
+       </div>
+    </div>
+</section>
+<!--=================================
+ register-form  -->
+<!--=================================
+ footer -->
+<div class="footer_list">
+
+</div>
+<!--=================================
+ footer -->
+ <!--=================================
+ back to top -->
+<div class="car-top">
+  <span><img src="images/car.png" alt=""></span>
+</div>
+ <!--=================================
+ back to top -->
+<!--=================================
+ jquery -->
+ <!--=================================
+  phoenGap-->
+ <script type="text/javascript" src="cordova.js"></script>
+ <!-- jquery  -->
+ <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+ <!-- custom -->
+ <script type="text/javascript" src="js/custom.js"></script>
+<!-- bootstrap -->
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- mega-menu -->
+<script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+<!-- select -->
+<script type="text/javascript" src="js/select/jquery-select.js"></script>
+<!-- magnific popup -->
+<script type="text/javascript" src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- validetta -->
+<script type="text/javascript" src="js/validetta.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#frm_register').validetta({
+    realTime:true,
+          display : 'bottom',
+         onValid : function( event ) {
+             event.preventDefault();
+             $.ajax({
+               type:"POST",
+               url:php_link+"register.php",
+               data:$('#frm_register').serialize(),
+               crossDomain:true,
+               cache:false,
+               success:function (data) {
+                 $('#frm_register')[0].reset();
+                 alert('Your regisration is sent - you can now start posting - Please Login')
+                 //window.location.href='add_listing.html';
+                 //console.log(data);
+               },
+             });
+             /*$('#alert').empty()
+                 .append('<div class="alert alert-success">Nice, Form is valid</div>');*/
+         },
+         //server validation
+         validators:{
+           remote:{
+             check_phone:{
+               type:'POST',
+               url:php_link+'check_phone.php',
+               datatype:'json'
+             }
+           }
+         },
+         onError : function( event ){
+             $('#alert').empty()
+                 .append('<div class="alert alert-danger">There are some errors.</div>');
+         }
+     });
+
+});//end Document ready
+</script>
+</body>
+</html>

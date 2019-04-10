@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<title></title>
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
+<!-- mega menu -->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<!-- main style -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!-- validetta-->
+<link rel="stylesheet" type="text/css" href="css/validetta.min.css">
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+<!--=================================
+  loading -->
+
+ <div id="loading">
+  <div id="loading-center">
+      <img src="images/loader.gif" alt="">
+ </div>
+</div>
+<!--=================================
+  loading -->
+
+<!--=================================
+ header -->
+ <header id="header" class="defualt">
+ <!--=================================
+  mega menu -->
+ <div class="menu">
+   <!-- menu start -->
+    <nav id="menu" class="mega-menu">
+     <!-- menu list items container -->
+     <section class="menu-list-items">
+      <div class="container">
+       <div class="row">
+        <div class="col-md-12">
+         <!-- menu logo -->
+         <ul class="menu-logo">
+             <li>
+                 <a href="index.html"><img id="logo_img" src="images/logo-light.png" alt="logo"> </a>
+             </li>
+         </ul>
+         <!-- menu links -->
+         <ul class="menu-links">
+          <div class="menu_list"></div>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </section>
+    </nav>
+   <!-- menu end -->
+  </div>
+ </header>
+<!--=================================
+ header -->
+<!--=================================
+ inner-intro -->
+<!--=================================
+ inner-intro -->
+<!--=================================
+ register-form  -->
+<section class="register-form page-section-ptb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+         <div class="section-title">
+           <p></p>
+
+           <h2>Your Listings<span id="listing_count"></span></h2>
+           <div class="separator"></div>
+         </div>
+         <a class="button red" id="btn_add_listing" href="cd_add_listing.html">Add Car Listing</a>
+         <a class="button red" id="btn_logout" href="#">Log Out</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================================
+ register-form  -->
+ <!--=================================
+ car-listing  -->
+ <section class="product-listing page-section-ptb">
+   <div class="container">
+     <div class="row">
+
+       <div class="col-lg-9 col-md-8">
+         <!-- modal start-->
+         <div class="modal fade" id="mark_as_sold" tabindex="-1" role="dialog" aria-labelledby="mark_as_sold" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h4 class="modal-title" id="exampleModalLabel">Mark As SOLD</h4>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+               </div>
+               <div class="modal-body">
+                 <p class="sub-title">Are you sure you want to Mark this vehicle as Sold?</p>
+                 <form class="gray-form reset_css" id="rmi_form">
+
+                   <div class="form-group">
+                     <button type="button" class="btn btn-outline-primary" id="btn_mark_as_sold">Yes, Mark As Sold</button>
+                     <button type="button" class="btn btn-outline-danger" id="btn_cancel" data-dismiss="modal">Cancel</button>
+                     <i class="fa fa-refresh fa-spin fa-3x fa-fw load_spiner"  style="display: none;"></i>
+                   </div>
+                 </form>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!--//Modal Ends-->
+          <div class="preview_listing">
+          </div>
+              <!--//End of car grid loop for listing-->
+           </div>
+         </div>
+       </div>
+ </section>
+ <!--=================================
+ //car-listing  -->
+<!--=================================
+ footer-->
+<div class="footer_list">
+
+</div>
+<!--//footer-->
+ <!--=================================
+ back to top -->
+<div class="car-top">
+  <span><img src="images/car.png" alt=""></span>
+</div>
+ <!--=================================
+ back to top -->
+<!--=================================
+ jquery -->
+ <!--=================================
+  phoenGap-->
+ <script type="text/javascript" src="cordova.js"></script>
+ <!-- jquery  -->
+ <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+ <!-- custom -->
+ <script type="text/javascript" src="js/custom.js"></script>
+<!-- bootstrap -->
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- mega-menu -->
+<script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+
+<!-- validetta -->
+<script type="text/javascript" src="js/validetta.min.js"></script>
+<script type="text/javascript">
+  function check_session() {
+    var user_id=window.sessionStorage.getItem("user_id");
+    if(!user_id){
+    window.location.href="cd_login.html";
+      }
+      else {
+        return user_id;
+      }
+    }
+$(document).ready(function(){
+  var user_id=check_session();
+              $.ajax({
+              type:"POST",
+              url:php_link+"get_user_listings.php",
+              data:{'user_id':user_id},
+              crossDomain:true,
+              cache:false,
+              success:function (data) {
+                if(data!='')
+                {
+                  $('.preview_listing').html(data);
+
+                  //get count for Listings
+                  $.ajax({
+                    type:"POST",
+                    url:php_link+"get_user_count.php",
+                    data:{'table':'tbl_listings','field':'user_id','user_id':user_id},
+                    crossDomain:true,
+                    cache:false,
+                    success:function (data) {
+                      //console.log(data);
+                      //var listing left= max_user_listings-data;
+                      $('#listing_count').html("Listings: "+data+"/"+max_user_listings);
+                      if(data>=max_user_listings){
+                      $('#btn_add_listing').remove();
+                    }
+                  }
+                    })
+                }
+                else {
+                  $('.preview_listing').html('<div class="alert alert-info" role="alert"><strong>OOpppss!! You have no listing?</strong> Start posting your listing by clicking on Add Car Listing on the top</div>');
+                }
+              },
+            })
+  $('#btn_logout').click(function(){
+    window.sessionStorage.clear();
+    window.location.href="cd_login.html";
+  })
+  $('#btn_mark_as_sold').click(function () {
+    var id=$("#sold").attr('listing_id');
+    $.ajax({
+      type:"POST",
+      url:php_link+"mark_as_sold.php",
+      data:{'table':'tbl_listings','field':'2','id':id},
+      crossDomain:true,
+      cache:false,
+      success:function (data) {
+        if(data=1){
+          $('#btn_cancel').click();
+          window.location="cd_admin.html";
+          //$('.car-grid').load('.car-grid');
+        }
+
+      }
+
+
+    })
+  })
+});//end Document ready
+</script>
+</body>
+</html>

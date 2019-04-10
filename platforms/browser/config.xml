@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.cardealer.app" version="1.3.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Car Dealer - Mauritius</name>
+    <description>
+      Car Dealer - Mauritius is all about Vehicles in Mauritius.
+        Car Dealer - Mauritius is a mobile app with exhaustive information of all new and used vehicles for sale,
+        and associated products and services, in Mauritius. In a few clicks,
+        you will be able to put your vehicle for sale, and to access a large catalogue of cars,
+        vans, buses, trucks, motorbikes, boats and boat engines with pictures, details and prices.
+        You can also contact the sellers directly via phone call or SMS.
+    </description>
+    <author email="info@webdevsolutions.biz" href="http://webdevsolutions.biz">
+        webdevsolutions Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

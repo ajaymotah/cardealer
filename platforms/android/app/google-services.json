@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "852179205119",
+    "firebase_url": "https://cardealer-f9b2f.firebaseio.com",
+    "project_id": "cardealer-f9b2f",
+    "storage_bucket": "cardealer-f9b2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852179205119:android:7099153307eb300a",
+        "android_client_info": {
+          "package_name": "com.cardealer.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852179205119-06bq2fnn9rh75i3k3pnt6qkhsrh0m4hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2TqRDy3-cvh-nBJJG6KqjPwJzjLWaHQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852179205119:android:ebf72eabd0046ecd",
+        "android_client_info": {
+          "package_name": "com.testpush.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852179205119-06bq2fnn9rh75i3k3pnt6qkhsrh0m4hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2TqRDy3-cvh-nBJJG6KqjPwJzjLWaHQg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

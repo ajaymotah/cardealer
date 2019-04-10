@@ -1,0 +1,31 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.cardealer.app"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.cardealer.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cardealer.app"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "com.cardealer.app"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-support-google-services": {
+            "PACKAGE_NAME": "com.cardealer.app"
+        },
+        "phonegap-plugin-multidex": {
+            "PACKAGE_NAME": "com.cardealer.app"
+        }
+    }
+}

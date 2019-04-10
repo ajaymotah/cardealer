@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.cardealer.app" version="1.4.13" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Car Dealer - Mauritius</name>
+    <description>
+      Car Dealer - Mauritius is all about Vehicles in Mauritius.
+        Car Dealer - Mauritius is a mobile app with exhaustive information of all new and used vehicles for sale,
+        and associated products and services, in Mauritius. In a few clicks,
+        you will be able to put your vehicle for sale, and to access a large catalogue of cars,
+        vans, buses, trucks, motorbikes, boats and boat engines with pictures, details and prices.
+        You can also contact the sellers directly via phone call or SMS.
+    </description>
+    <author email="info@webdevsolutions.biz" href="http://webdevsolutions.biz">
+        webdevsolutions Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+    <platform name="android">
+        <icon density="ldpi" src="www/res/icon/android/ldpi.png" />
+        <icon density="mdpi" src="www/res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="www/res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="www/res/icon/android/xhdpi.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/xxxhdpi.png" />
+        <splash density="land-ldpi" src="www/res/screen/android/320x200.png" />
+        <splash density="land-mdpi" src="www/res/screen/android/480x320.png" />
+        <splash density="land-hdpi" src="www/res/screen/android/800x480.png" />
+        <splash density="land-xhdpi" src="www/res/screen/android/1280x720.png" />
+        <splash density="land-xxhdpi" src="www/res/screen/android/1600x960.png" />
+        <splash density="land-xxxhdpi" src="www/res/screen/android/1920x1280.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/200x320.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/320x480.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/480x800.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/720x1280.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/960x1600.png" />
+        <splash density="port-xxxhdpi" src="www/res/screen/android/1280x1920.png" />
+    </platform>
+    <plugin name="phonegap-plugin-push" spec="^2.2.3">
+        <variable name="SENDER_ID" value="852179205119" />
+    </plugin>
+    <engine name="android" spec="^7.1.4" />
+</widget>
