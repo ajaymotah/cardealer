@@ -919,7 +919,7 @@ function get_year() {
 }
 function get_model() {
   $make_id=$(this).val();
-  alert($make_id);
+  //alert($make_id);
   $.ajax({
     type:"POST",
     url:php_link+"get_model.php",

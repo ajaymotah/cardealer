@@ -1,0 +1,4 @@
+---Update 14/04/2019----
+- cd_listing- Changed titles to appear above picture instead of down
+- Index.html - added - Buy/Rent buttom and links
+- cd_coming_soon.html - Link to page coming soons

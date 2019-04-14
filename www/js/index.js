@@ -70,7 +70,7 @@ document.getElementById("gcm_id").innerHTML = data.registrationId;
 });
 
 push.on('notification', function(data) {
-//alert(data.title+" Message: " +data.message);
+alert(data.title+" Message: " +data.message);
 });
 
 push.on('error', function(e) {
