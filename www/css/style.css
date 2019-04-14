@@ -68,6 +68,15 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
     General
 *************************/
 /*Customs CSS */
+.cd_inner-intro{
+  height: 20px;
+}
+.btn_img{
+  text-align: center;
+}
+.btn_img:active {
+  transform: translateY(4px);
+}
 /*upload image overlay*/
 .image_preview {
     position: relative;
