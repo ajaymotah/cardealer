@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "D:\\cardealer_final\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pt\\values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Ajay\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\c7be5167dcb14d510a643d465f7ba7c4\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\testcar\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {

@@ -187,11 +187,12 @@ $(document).ready(function(){
                   //get count for Listings
                   $.ajax({
                     type:"POST",
-                    url:php_link+"get_count.php",
-                    data:{'table':'tbl_listings','field':'user_id','id':user_id},
+                    url:php_link+"get_user_count.php",
+                    data:{'table':'tbl_listings','field':'user_id','user_id':user_id},
                     crossDomain:true,
                     cache:false,
                     success:function (data) {
+                      //console.log(data);
                       //var listing left= max_user_listings-data;
                       $('#listing_count').html("Listings: "+data+"/"+max_user_listings);
                       if(data>=max_user_listings){

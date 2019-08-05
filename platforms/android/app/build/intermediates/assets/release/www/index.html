@@ -27,6 +27,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!-- responsive -->
 <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<!-- ribbon style
+<link rel="stylesheet" type="text/css" href="css/ribbon.css">-->
 <body>
 <!--=================================
   loading -->
@@ -369,6 +371,13 @@
   </section>
 <!--=================================
   rev slider -->
+  <!--==select Buy or Rent car==-->
+
+
+  <!--//==end select Buy or Rent Car==-->
+
+
+
 <!--=================================
  welcome -->
  <section class="search white-bg">
@@ -439,11 +448,13 @@
    </div>
  </div>
  </section>
+
  <!--counter-->
 <section class="counter counter-style-1 light page-section-ptb" style="
     padding-bottom: 1px;
     padding-top: 10px;"
 >
+
   <div class="container">
    <div class="row">
      <div class="col-lg-3 col-md-6 text-center">
@@ -492,6 +503,7 @@
  <!--=================================
   feature-car -->
   <!--====== section welcome==-->
+
    <section class="welcome-block objects-car page-section-ptb white-bg">
     <div class="objects-left left"><img class="img-fluid objects-1" src="images/objects/01.jpg" alt=""></div>
     <div class="objects-right right"><img class="img-fluid objects-2" src="images/objects/02.jpg" alt=""></div>
@@ -566,6 +578,11 @@
    welcome -->
   <!--=================================
   car-listing  -->
+  <!-- Div to get to when car sale selected-->
+  <div id="car_selling">
+
+  </div>
+
   <section class="product-listing page-section-ptb">
     <div class="container">
       <div class="row">
@@ -873,7 +890,7 @@ function get_year() {
 }
 function get_model() {
   $make_id=$(this).val();
-  alert($make_id);
+  //alert($make_id);
   $.ajax({
     type:"POST",
     url:php_link+"get_model.php",

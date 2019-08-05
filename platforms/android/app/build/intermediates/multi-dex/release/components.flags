@@ -1,5 +1,5 @@
--injars 'D:\testcar\platforms\android\app\build\intermediates\transforms\jarMerging\release\0.jar'
--outjars 'D:\testcar\platforms\android\app\build\intermediates\multi-dex\release\componentClasses.jar'
+-injars 'D:\cardealer_final\platforms\android\app\build\intermediates\transforms\jarMerging\release\0.jar'
+-outjars 'D:\cardealer_final\platforms\android\app\build\intermediates\multi-dex\release\componentClasses.jar'
 
 -libraryjars 'C:\Users\Ajay\AppData\Local\Android\sdk\build-tools\28.0.3\lib\shrinkedAndroid.jar'
 
@@ -10,10 +10,10 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration 'D:\testcar\platforms\android\app\build\intermediates\multi-dex\release\components.flags'
+-printconfiguration 'D:\cardealer_final\platforms\android\app\build\intermediates\multi-dex\release\components.flags'
 
 
-# Referenced at D:\testcar\platforms\android\app\build\intermediates\manifests\full\release\AndroidManifest.xml:61
+# Referenced at D:\cardealer_final\platforms\android\app\build\intermediates\manifests\full\release\AndroidManifest.xml:61
 -keep class android.support.multidex.MultiDexApplication {
     <init>(...);
 }

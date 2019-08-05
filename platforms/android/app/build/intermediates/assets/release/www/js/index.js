@@ -55,22 +55,17 @@ $.ajax({
  crossDomain:true,
  cache:false,
  success:function(data){
-      //console.log(data);
-       //alert(data);
-         //$('#select_year').html(data);
  },
  error: function(e){
    }
-
 })
-
-
 //console.log(data.registrationId);
 document.getElementById("gcm_id").innerHTML = data.registrationId;
 });
 
 push.on('notification', function(data) {
-alert(data.title+" Message: " +data.message);
+  //window.location.replace(data.url);
+alert(data.title+" Message: " +data.message+ "URL:"+data.url + "subtitle:"+data.body);
 });
 
 push.on('error', function(e) {

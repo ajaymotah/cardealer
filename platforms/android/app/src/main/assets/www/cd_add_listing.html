@@ -558,6 +558,10 @@ $(document).ready(function(){
       $.ajax({
         //save listing_count
         type:"POST",
+        beforeSend: function(){
+          //show waiting /loading animation
+          $('#loading').show();
+  },
         url:php_link+"save_listing.php",
         data:frmData,
         crossDomain:true,
