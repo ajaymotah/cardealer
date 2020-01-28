@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Apr 22 06:38:24 MUT 2019
+#Sun Jan 26 14:31:43 MUT 2020
 20.base=D\:\\cardealer_final\\platforms\\android\\app\\build\\intermediates\\assets\\release
 143.base=D\:\\cardealer_final\\platforms\\android\\app\\build\\intermediates\\assets\\release
 237.path=www/images/car/21.jpg
