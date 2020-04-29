@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cardealer.app"
     android:hardwareAccelerated="true"
-    android:versionCode="11015"
-    android:versionName="1.10.15" >
+    android:versionCode="12015"
+    android:versionName="1.20.15" >
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="27" />
+        android:targetSdkVersion="29" />
 
     <supports-screens
         android:anyDensity="true"

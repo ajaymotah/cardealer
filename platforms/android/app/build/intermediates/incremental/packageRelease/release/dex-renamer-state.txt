@@ -1,4 +1,4 @@
-#Sun Jan 26 14:31:42 MUT 2020
+#Wed Apr 29 15:10:26 MUT 2020
 base.0=D\:\\cardealer_final\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
 path.0=classes.dex
 renamed.0=classes.dex

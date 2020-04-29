@@ -30,6 +30,7 @@
     </platform>
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
     <platform name="android">
+        <preference name="android-targetSdkVersion" value="29" />
         <icon density="ldpi" src="www/res/icon/android/ldpi.png" />
         <icon density="mdpi" src="www/res/icon/android/mdpi.png" />
         <icon density="hdpi" src="www/res/icon/android/hdpi.png" />

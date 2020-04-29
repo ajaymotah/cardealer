@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.cardealer.app" version="1.10.15" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.cardealer.app" version="1.20.15" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
@@ -57,4 +57,5 @@
     <splash density="port-xxhdpi" src="www/res/screen/android/960x1600.png" />
     <splash density="port-xxxhdpi" src="www/res/screen/android/1280x1920.png" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="android-targetSdkVersion" value="29" />
 </widget>
