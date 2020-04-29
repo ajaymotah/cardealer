@@ -252,28 +252,7 @@
 
           style="z-index: 6;"><img src="revolution/assets/35261-05-honda.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
 
-        <!-- LAYER NR. 3 -->
-        <!--<div class="tp-caption   tp-resizeme"
-           id="slide-6-layer-6"
-           data-x="center" data-hoffset=""
-           data-y="270"
-                data-width="['auto']"
-          data-height="['auto']"
-          data-transform_idle="o:1;"
-
-           data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;"
-           data-transform_out="opacity:0;s:300;"
-           data-mask_in="x:0px;y:0px;"
-          data-start="3260"
-          data-splitin="chars"
-          data-splitout="none"
-          data-responsive_offset="on"
-
-          data-elementdelay="0.05"
-
-          style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">We have everything </div>-->
-
-        <!-- LAYER NR. 4 -->
+          <!-- LAYER NR. 4 -->
         <div class="tp-caption   tp-resizeme"
            id="slide-6-layer-7"
            data-x="center" data-hoffset=""
@@ -293,28 +272,6 @@
           data-elementdelay="0.05"
 
           style="z-index: 8; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Your car needs! </div>
-
-        <!-- LAYER NR. 5 -->
-        <!--<div class="tp-caption button red  tp-resizeme"
-           id="slide-6-layer-10"
-           data-x="center" data-hoffset=""
-           data-y="bottom" data-voffset="140"
-                data-width="['auto']"
-          data-height="['auto']"
-          data-transform_idle="o:1;"
-            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power0.easeIn;"
-            data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);"
-
-           data-transform_in="y:bottom;s:600;e:Power2.easeInOut;"
-           data-transform_out="opacity:0;s:300;"
-          data-start="5329.8614501953"
-          data-splitin="none"
-          data-splitout="none"
-          data-responsive_offset="on"
-
-           data-end="8999.8614501953"
-
-          style="z-index: 9; white-space: nowrap; font-size: 14px; line-height: 18px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;text-transform:uppercase;background-color:rgba(219, 45, 46, 1.00);padding:12px 20px 12px 20px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">learn more </div>-->
 
         <!-- LAYER NR. 6 -->
         <div class="tp-caption   tp-resizeme"
@@ -375,9 +332,6 @@
 
 
   <!--//==end select Buy or Rent Car==-->
-
-
-
 <!--=================================
  welcome -->
  <section class="search white-bg">
@@ -414,10 +368,6 @@
            <!--<a class="link" href="#">ADVANCED SEARCH</a>-->
      </div>
 </div>
-
-
-
-
      <div class="col-md-4" style="padding-top:15px">
        <button id="btn_submit" name="btn_submit" type="button" class="button red"> Search </button></br>
      </div>
@@ -426,7 +376,6 @@
    </div>
  </div>
  </section>
-
  <!--counter-->
 <section class="counter counter-style-1 light page-section-ptb" style="
     padding-bottom: 1px;
@@ -443,7 +392,6 @@
 <!-- end counter-->
  <!--=================================
   feature-car-->
-
  <section class="feature-car bg-2 bg-overlay-black-70 page-section-ptb">
    <div class="container">
     <div class="row">
@@ -826,9 +774,9 @@ function get_regions() {
     });
 }
 //gets all the listings
-function get_all_listings() {
+function get_rental_listings() {
   $.ajax({
-    url:php_link+"get_all_cars.php",
+    url:php_link+"get_rental_listings.php",
     method:"POST",
     data:{"test":"test"},
     crossDomain:true,
@@ -931,7 +879,7 @@ function get_featured_cars() {
     get_regions();
     get_featured_cars();
     get_car_count();
-    get_all_listings();
+    get_rental_listings();
     update_views();
     //get make //
     $('#select_make').change(function () {
